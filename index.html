@@ -7,6 +7,7 @@
   <title>Bem vindo(a) ao Steam</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/icons/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -63,27 +64,24 @@
 
   <!-- intro end -->
 
-  <!-- games start -->
+  <!-- main start -->
 
-  <section class="#games-bg">
-    <div class="games container">
-      <div class="side-bar">
-        <nav class="nav-games container">
-          <ul class="font-sm-18">
-            <li>Novidades e tendências</li>
-            <li>categorias</li>
-            <li>loja de pontos</li>
-            <li>notícias</li>
-            <li>laboratório</li>
-          </ul>
-        </nav>
-        <div class="search-bar container">
-          <span class="font-r-18">Buscar jogo</span>
-          <img src="./img/icons/search.svg" alt="search">
-        </div>
+  <main class="#games-bg">
+    <section class="games container">
+      <nav class="nav-sec">
+        <ul class="font-sm-18">
+          <li>Novidades e tendências</li>
+          <li>categorias</li>
+          <li>loja de pontos</li>
+          <li>notícias</li>
+          <li>laboratório</li>
+        </ul>
+      </nav>
+      <div class="search-bar container">
+        <input type="text" name="search-game" id="search-game" class="font-r-18" placeholder="Buscar jogo">
+        <button type="submit"><img src="./img/icons/search.svg" alt="search"></button>
       </div>
-
-      <div class="game-gallery container">
+      <div class="game-gallery">
         <div class="game-gallery-items">
           <div class="gallery-img">
             <img src="./img/fotos/gallery-1.jpg" alt="photo-gallery-1">
@@ -120,10 +118,170 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- games end -->
+      <article class="nav-terc container">
+        <h1 class="font-sm-24">navegar pelo steam</h1>
+        <nav>
+          <ul class="font-sm-18">
+            <li>lançamentos</li>
+            <li>ofertas</li>
+            <li>jogos gratuitos</li>
+            <li>Mais vendidos</li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="categories">
+        <h1 class="font-sm-24">explore por categoria</h1>
+        <div class="categories-container">
+          <div class="categories-items">
+            <img src="./img/categories/1 - assassins-creed-valhalla-1.jpg" alt="Assassins Creed Valhalla">
+            <h2 class="font-m-16">Assassin's Creed Valhalla</h2>
+            <div class="font-m-14">
+              <h3>- 10%</h3>
+              <span>R$ 100,00 </span>
+              <p>R$ 90,00</p>
+            </div>
+          </div>
+
+
+          <div class="categories-items">
+            <img src="./img/categories/2 - gta-iv.jpg" alt="GTA IV">
+            <h2 class="font-m-16">Grand Theft Auto V</h2>
+            <div class="font-m-14">
+              <h3>- 50%</h3>
+              <span>R$ 100,00</span>
+              <p>R$ 50,00</p>
+            </div>
+          </div>
+
+          <div class="categories-items">
+            <img src="./img/categories/3 - minecraft.jpg" alt="Minecraft">
+            <h2 class="font-m-16">Minecraft</h2>
+            <div class="font-m-14">
+              <h3>- 20%</h3>
+              <span>R$ 100,00</span>
+              <p>R$ 80,00</p>
+            </div>
+          </div>
+
+          <div class="categories-items">
+            <img src="./img/categories/4 - detroit-become-1.jpg" alt="Detroit Become Human">
+            <h2 class="font-m-16">Detroit Become Human</h2>
+            <div class="font-m-14">
+              <h3>- 33%</h3>
+              <span>R$ 100,00</span>
+              <p>R$ 66,33</p>
+            </div>
+          </div>
+
+          <div class="categories-items">
+            <img src="./img/categories/5 - fall-guys.jpg" alt="Fall Guys">
+            <h2 class="font-m-16">Fall Guys</h2>
+            <div class="font-m-14">
+              <h3>- 85%</h3>
+              <span>R$ 100,00</span>
+              <p>R$ 15,00</p>
+            </div>
+          </div>
+
+          <div class="categories-items">
+            <img src="./img/categories/6 - god-of-war-1.jpg" alt="God of War">
+            <h2 class="font-m-16">God of War</h2>
+            <div class="font-m-14">
+              <h3>- 10%</h3>
+              <span>R$ 100,00</span>
+              <p>R$ 90,00</p>
+            </div>
+          </div>
+
+          <div class="categories-items">
+            <img src="./img/categories/7 - cyberpunk.jpg" alt="Cyberpunk 2077">
+            <h2 class="font-m-16">Cyberpunk 2077</h2>
+            <div class="font-m-14">
+              <h3>- 50%</h3>
+              <span>R$ 199,98</span>
+              <p>R$ 90,95</p>
+            </div>
+          </div>
+
+          <div class="categories-items">
+            <img src="./img/categories/8 - ghost-wire-tokyo-1.jpg" alt="Ghostwire: Tokyo">
+            <h2 class="font-m-16">Ghostwire: Tokyo</h2>
+            <div class="font-m-14">
+              <h3>- 50%</h3>
+              <span>R$ 100,00</span>
+              <p>R$ 50,00</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="free-games">
+        <h1 class="font-sm-24">Jogos gratuitos</h1>
+        <div class="free-games-container">
+          <div class="free-games-item-1">
+            <img src="./img/free-games/stardew-valley-1.jpg" alt="Stardew Valley">
+            <div class="free-games-item-bg">
+              <h2 class="font-m-24">Stardew Valley</h2>
+              <h3 class="font-m-16">Oferta válida até 19 de abr. às 14h</h3>
+              <div class="font-r-18 free-games-item-content">
+                <h4>- 100%</h4>
+                <span>R$ 45,50</span>
+                <p>R$ 00,00</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="free-games-item-1">
+            <img src="./img/free-games/hogwarts legacy.jpg" alt="Horgwart Legacy">
+            <div class="free-games-item-bg">
+              <h2 class="font-m-24">Stardew Valley</h2>
+              <h3 class="font-m-16">Oferta válida até 2 de jul. às 23h</h3>
+              <div class="font-r-18 free-games-item-content">
+                <h4>- 100%</h4>
+                <span>R$ 220,35</span>
+                <p>R$ 00,00</p>
+              </div>
+            </div>
+          </div>
+          <div class="second-free-games">
+            <div class="free-games-item-2">
+              <img src="./img/free-games/stray.jpg" alt="Stray">
+              <div class="font-m-14">
+                <h2 class="font-r-18">Oferta do dia!</h2>
+                <div class="item-2-content">
+                  <h4>- 100%</h4>
+                  <p>R$ 00,00</p>
+                </div>
+              </div>
+            </div>
+            <div class="free-games-item-2">
+              <img src="./img/free-games/raft.jpg" alt="Raft">
+              <div class="font-m-14">
+                <h2 class="font-r-18">Oferta do dia!</h2>
+                <div class="item-2-content">
+                  <h4>- 100%</h4>
+                  <p>R$ 00,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="more-info">
+        <h2 class="font-m-24">Continue rolando para mais recomendações</h2>
+        <p class="font-m-20">Abaixo, você encontrará uma variedade de títulos que podem lhe interessar em categorias do Steam</p>
+        <img src="./img/icons/arrow-down.svg" alt="arrow down">
+      </article>
+    </section>
+  </main>
+  <!-- main end -->
+
+  <footer class="footer">
+    <img src="./img/icons/steam.svg" alt="steam">
+  </footer>
 </body>
 
 </html>
